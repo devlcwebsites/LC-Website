@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
+      <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-428RBX3WE1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -12,7 +12,7 @@
 </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LCWebsites</title>
+  <title>LC Websites - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
@@ -42,11 +42,27 @@
 
     .divider { height: 2px; background: white; margin: 40px 0; opacity: 0.3; }
 
+    .reviews-section { margin-top: 70px; text-align: center; }
+    .reviews-section h2 { font-size: 36px; margin-bottom: 20px; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 30px; }
+    .review-card { background: #141414; padding: 20px; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .review-card img { width: 100%; border-radius: 14px; }
+
     .cta-section { text-align: center; background: #141414; padding: 50px 20px; margin-top: 60px; border-radius: 20px; }
     .cta-section h2 { font-size: 36px; margin-bottom: 20px; }
     .cta-section p { color: #aaa; font-size: 18px; margin-bottom: 30px; }
 
     footer { text-align: center; margin-top: 80px; padding: 20px; color: #aaa; border-top: 1px solid white; }
+
+    .reviews { margin-top: 80px; text-align: center; }
+    .reviews h2 { font-size: 36px; margin-bottom: 30px; }
+    .reviews img {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+    }
 
     .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; padding: 16px 24px; border-radius: 50px; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 20px rgba(0,0,0,.3); }
 
@@ -65,7 +81,7 @@
 
   <div class="container">
     <header>
-      <h2>LCWebsites</h2>
+      <h2>LC Websites</h2>
       <nav>
         <a href="#work">Work</a>
         <a href="#services">Services</a>
@@ -88,18 +104,29 @@
     <section class="portfolio-section" id="work">
       <h2>Desktop Projects</h2>
       <div class="video-grid">
-        <video src="videos/desktop1.mp4" controls playsinline preload="metadata"></video>
+        <video src="videos/desktop4.mp4" controls playsinline preload="metadata"></video>
         <video src="videos/desktop2.mp4" controls playsinline preload="metadata"></video>
         <video src="videos/desktop3.mp4" controls playsinline preload="metadata"></video>
+        <video src="videos/desktop1.mp4" controls playsinline preload="metadata"></video>
       </div>
 
       <div class="divider"></div>
 
       <h2>Mobile Projects</h2>
       <div class="video-grid">
-        <video src="videos/mobile1.mp4" controls playsinline preload="metadata"></video>
+        <video src="videos/mobile4.mp4" controls playsinline preload="metadata"></video>
         <video src="videos/mobile2.mp4" controls playsinline preload="metadata"></video>
         <video src="videos/mobile3.mp4" controls playsinline preload="metadata"></video>
+        <video src="videos/mobile1.mp4" controls playsinline preload="metadata"></video>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+      <h2>Client Reviews</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <img src="images/review1.jpeg" alt="Client Review">
+        </div>
       </div>
     </section>
 
@@ -110,7 +137,7 @@
     </section>
 
     <footer id="contact">
-      &copy; 2026 LCWebsites. All rights reserved.
+      &copy; 2026 LC Websites. All rights reserved.
     </footer>
   </div>
 
@@ -146,4 +173,3 @@
 
 </body>
 </html>
-
